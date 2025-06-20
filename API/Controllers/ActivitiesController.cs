@@ -19,7 +19,7 @@ public class ActivitiesController(ApplicationDbContext context) : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<ActionResult<Activity>> GetActivityAsync(Guid id)
+    public async Task<ActionResult<Activity>> GetActivityAsync(string id)
     {
         var activity = await context.Activities.FindAsync(id);
         if (activity == null)
