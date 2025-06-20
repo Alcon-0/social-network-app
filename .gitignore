@@ -31,3 +31,10 @@ ops/*.retry
 # IDE
 .idea/
 .vs/
+
+*.DotSettings.user
+
+# DB
+*.db
+*.db-shm
+*.db-wal
